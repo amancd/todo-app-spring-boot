@@ -18,8 +18,7 @@
 ### CRUD Operations:
 - **Create**, **Read**, **Update**, **Delete** endpoints.
 
-Project Structure:
-
+### Project Structure:
 - **controller/
 - **service/
 - **repository/
