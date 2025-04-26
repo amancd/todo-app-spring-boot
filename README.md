@@ -20,46 +20,39 @@
 
 Project Structure:
 
-controller/
-service/
-repository/
-model/
-TaskManagerApplication.java
+- **controller/
+- **service/
+- **repository/
+- **model/
+- **TaskManagerApplication.java
 
 Database Connection:
 
-H2 Database (in-memory) for quick testing.
-
-application.properties for database and JPA settings.
+- **H2 Database (in-memory) for quick testing.
+- **application.properties for database and JPA settings.
 
 ⚛️ React / Next.js (Frontend)
-useState Hook:
-
-Storing dynamic data like task lists and form input.
+- **useState Hook:
+- **Storing dynamic data like task lists and form input.
 
 Example:
-
-const [tasks, setTasks] = useState<Task[]>([]);
-useEffect Hook:
-
-Fetch tasks when the page loads.
+- **const [tasks, setTasks] = useState<Task[]>([]);
+- **useEffect Hook: Fetch tasks when the page loads.
 
 Example:
 
 useEffect(() => {
   fetchTasks();
 }, []);
-Axios:
 
-Sending HTTP requests to backend (GET, POST, PUT, DELETE).
+Axios:
+- **Sending HTTP requests to backend (GET, POST, PUT, DELETE).
 
 Components:
 
 TaskItem Component to display each task separately.
 
-TypeScript:
-
-Defining interfaces like:
+TypeScript: Defining interfaces like:
 
 interface Task {
   id: number;
@@ -67,63 +60,53 @@ interface Task {
   description: string;
   completed: boolean;
 }
+
 Spread Operator (...):
 
-Copying objects easily while adding or changing properties.
+- **Copying objects easily while adding or changing properties.
 
 Example:
 
 { ...newTask, completed: false }
-Await/Async:
 
-Wait for API responses to finish before continuing.
+Await/Async:
+- **Wait for API responses to finish before continuing.
 
 Example:
+- **await createTask({ ...newTask, completed: false });
 
-await createTask({ ...newTask, completed: false });
 TailwindCSS:
-
-Quickly building beautiful UIs with utility classes.
-
-Examples: bg-gray-100, text-center, rounded, shadow-xl.
+- **Quickly building beautiful UIs with utility classes.
+- **Examples: bg-gray-100, text-center, rounded, shadow-xl.
 
 📈 Application Flow
-Frontend (Next.js) sends API requests to Backend (Spring Boot).
 
-Controller accepts the request and calls Service.
-
-Service calls Repository to interact with the Database.
-
-Repository saves/fetches data and returns it back up the chain.
-
-Frontend displays updated task list dynamically.
+- **Frontend (Next.js) sends API requests to Backend (Spring Boot).
+- **Controller accepts the request and calls Service.
+- **Service calls Repository to interact with the Database.
+- **Repository saves/fetches data and returns it back up the chain.
+- **Frontend displays updated task list dynamically.
 
 ⚡ Commands for Running the App
 Spring Boot (Backend)]
 
-./mvnw spring-boot:run
-# or
-mvn spring-boot:run
+- **mvn spring-boot:run
+
 Next.js Frontend
 
-npm install
-npm run dev
-Open: http://localhost:3000
+- **npm install
+- **npm run dev
+- **Open: http://localhost:3000
 
 ✅ Checklist of What I Learned
  Spring Boot Project Structure
 
- MVC Architecture
-
- Entity, Repository, Service, Controller layers
-
- Dependency Injection
-
- useState, useEffect hooks
-
- API Integration with Axios
-
- TypeScript Interfaces
+ - **MVC Architecture
+ - **Entity, Repository, Service, Controller layers
+ - **Dependency Injection
+ - **useState, useEffect hooks
+ - **API Integration with Axios
+ - **TypeScript Interfaces
 
  TailwindCSS Styling
 
