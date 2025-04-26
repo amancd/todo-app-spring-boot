@@ -105,11 +105,4 @@ Next.js Frontend
  - **Dependency Injection
  - **useState, useEffect hooks
  - **API Integration with Axios
- - **TypeScript Interfaces
-
- TailwindCSS Styling
-
- Connecting Frontend with Backend
-
- Full CRUD Operation End-to-End
 
